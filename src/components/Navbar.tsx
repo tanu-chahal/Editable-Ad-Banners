@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar w-full flex flex-col gap-5">
       <div className="navContent flex flex-col gap-5 sm:flex-row sm:justify-between sm:px-5 ">
-        <h1 className="heading text-purple-600 text-lg sm:text-2xl">Editable Add Banners</h1>
+        <h1 className="heading text-purple-600 text-lg sm:text-2xl">Editable Ad Banners</h1>
         <div className="navLinks flex gap-3 sm:gap-5">
           <a className="border-0" href="https://github.com/tanu-chahal/Editable-Ad-Banners" target="_blank">
             <img
