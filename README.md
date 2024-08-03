@@ -2,6 +2,8 @@
 
 This is is a Next.js + Typescript Application that displays some Ad Banners & allows users to edit them in real-time.
 
+![Preview Image](./public/assets/Preview-Img.png)
+
 ## Getting Started
 
 1. Clone the project repository into your local machine:
