@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
@@ -11,7 +12,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }: PluginAPI) {
       const newUtilities = {
         '.text-shadow-sm': {
           'text-shadow': '1px 1px 2px rgba(0, 0, 0, 0.5)',
@@ -26,8 +27,10 @@ const config: Config = {
           'text-shadow': '5px 5px 4px rgba(0, 0, 0, 0.7)',
         },
       };
-
-      addUtilities(newUtilities, ['responsive', 'hover']);
+      addUtilities(newUtilities, {
+        respectPrefix: false,
+        respectImportant: false,
+      });
     },
   ],
 };
